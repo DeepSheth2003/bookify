@@ -1,0 +1,266 @@
+.main-navbar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(30, 30, 30, 1);
+}
+.main-navbar::selection{
+    background-color: rgba(4, 47, 46, 1);
+    color: rgba(45, 212, 192, 1);
+}
+
+.child-navbar{
+    height: 100%;
+    width: 95%;
+    border-bottom: 0.5px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.3rem;
+}
+.child-navbar p{
+    cursor: default;
+}
+
+.nav-icon{
+    background-image: url('../assets/nav-logo.png');
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+}
+
+.navbar-pages{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 250;
+}
+
+.link-btn{
+    text-decoration: none;
+    color: white;
+}
+.link-btn:hover{
+    color: slategray;
+}
+
+
+/***** Card Component *****/
+
+.card{
+    margin-top: 50px;
+    background: linear-gradient(-115deg,white,#ebeef1);
+    height: 420px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: default;
+}
+
+.head-card{
+    width: 100%;
+    height: 20vh;
+}
+.head-card span{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.card-name{
+    color: lightgray;
+    padding: 0 5px 0 5px;
+    font-size: 0.7rem;
+    background: linear-gradient(45deg,black,rgba(3, 143, 145, 1));
+}
+
+.span-p1{
+    font-size: 1.2rem;
+}
+.span-p2{
+    font-size: 0.7rem;
+    color: gray;
+}
+
+.body-card{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    font-size: 0.85rem;
+    gap: 15px;
+    color: darkslategray;
+}
+
+.card-price{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: black;
+}
+
+.card-btn{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 15px;
+}
+
+.card-btn button{
+    background: linear-gradient(45deg,black,rgba(3, 143, 145, 1));
+    height: 30px;
+    font-size: 0.8rem;
+    width: 90px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+/****** comment component ******/
+
+.comment{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.com-identity{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.com-pic{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.com-pic-in{
+    background-color: white;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.com-name{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px 0 0px;
+}
+.com-likes{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.likes{
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 0 5px 0 5px;
+    border-radius: 15px;
+}
+
+.com-info{
+    height: 50%;
+    width: 100%;
+}
+
+.thoughts{
+    height: 100%;
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar-pages{
+        width: 65%;
+    }
+
+    .comment{
+        height: 150px;
+    }
+    .com-pic{
+        width: 15%;
+    }
+    .com-name{
+        width: 70%;
+    }
+    .com-likes{
+        width: 15%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .child-navbar p{
+        font-size: 1.1rem;
+    }
+
+    .nav-icon{
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar-pages{
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+    .com-pic{
+        width: 20%;
+    }
+    .com-name{
+        width: 80%;
+    }
+    .com-likes{
+        display: none;
+    }
+    .thoughts{
+        font-size: 0.7rem;
+    }
+}
+
